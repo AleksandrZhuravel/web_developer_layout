@@ -1,0 +1,279 @@
+@width_fool: 1920px;
+@help_border: 2px solid red;
+@font_raleway: Raleway;
+@font_montserrat: Montserrat;
+
+.main-servises {
+    
+        box-sizing: border-box;
+        
+    
+    .servises_types {
+       width:  @width_fool;
+       height: 373px; 
+        border: @help_border;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: #ffffff;
+        
+//        .type_line {
+//            width: 70px;
+//            height: 3px;
+//            background-color: #f1eee9;
+//            
+//            &:active {
+//                background-color: #c7b299;
+//            }
+//        }
+    }
+    
+    .type() {
+        
+        border: @help_border;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+        
+    }
+    
+    .type_span() {
+        
+        font-family: @font_raleway;
+        font-size: 22px;
+        line-height: 1.2;
+        font-weight: 600;
+        color: #555555;
+        
+        &:active {
+            color: #c7b299;
+        }
+    }
+    
+    .type_p() {
+        font-family: @font_montserrat;
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 300;
+        color: #8c8c8c;
+        text-align:center;
+    }
+    
+    .type_icon {
+                fill: #555555;      
+        }
+    
+    .type_section {
+        
+        &:after {
+      content: "";
+      display: block;
+      width: 70px;
+      height: 3px;
+      background-color: #eaeaea;
+     }
+        &:hover:after {
+            background-color:#c4c2c2;
+        }
+        
+        &:active:after {
+            background-color:#c7b299;
+        }
+        
+         &:hover .type_icon {
+                 fill:#c4c2c2;   
+                }
+                
+         &:active .type_icon {
+                  fill:#c7b299;  
+                }
+        
+        &:hover .type_heading {
+                 color:#c4c2c2;   
+                }
+                
+         &:active .type_heading {
+                  color:#c7b299;  
+                }
+        
+    }
+    
+    .type_design {
+        
+        .type();
+         width: 266px;
+        height: 213px;
+        
+        a {
+            width: 49px;
+            height: 49px;
+            margin: 0 0 29px 0; 
+             box-sizing: border-box;
+        }
+        
+        span {
+            .type_span();
+        }
+        p {
+            .type_p();
+            margin: 19px 0 30px 0;
+        }
+    }
+    
+    .type_development {
+        .type();
+         width: 267px;
+        height: 204px;
+        
+        a {
+            width: 44px;
+            height: 40px;
+            margin: 0px 0 29px 0;
+            padding: 9px 0 0 0;
+        }
+        span {
+            .type_span();
+        }
+        p {
+            .type_p();
+            margin: 19px 0 33px 0;
+        }
+    }
+    
+    .type_customization {
+        .type();
+         width: 266px;
+         height: 209px;
+        
+        a {
+            width: 44px;
+            height: 44px;
+            margin: 0px 0 30px 0;
+            padding: 4px 0 0 0;
+            }
+        
+        
+        
+        span {
+            .type_span();
+        }
+        p {
+            .type_p();
+            margin: 24px 0 30px 0;
+        }
+    }
+    .type_marketing {
+        .type();
+         width: 266px;
+         height: 201px;
+        
+        a {
+            width: 52px;
+            height: 36px;
+            margin: 0px 0 30px 0;
+            padding: 12px 0 0 0;
+        }
+        span {
+            .type_span();
+        }
+        p {
+            .type_p();
+            margin: 19px 0 30px 0;
+        }
+    }
+    .servises_examples {
+        width:  @width_fool;
+        height: 700px; 
+        border: @help_border;
+        background-color: #fbfaf8;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: url(../img/servises_examples_page_front.png),
+                          url(../img/servises_examples_page_left.png),
+                          url(../img/servises_examples_page_right.png);
+        background-size: 770px 482px, 770px 400px, 770px 400px;
+        background-repeat: no-repeat;
+        background-position: center bottom, bottom 0px left 346px, bottom 0px right 344px;
+        
+        span {
+            font-family: @font_raleway;
+            font-size: 30px;
+            line-height: 1.2;
+            font-weight: 600;
+            color: #555555;
+            padding: 83px 0 0 0;
+            margin: 0 0 24px 0;
+        }
+        
+        p {
+            text-align:center;
+            font-family: @font_montserrat;
+            font-size: 16px;
+            line-height: 28px;
+            font-weight: 300;
+            color: #8c8c8c;
+            margin: 0 auto;
+        }
+    }
+  
+    .servises_purchase {
+        
+        width:  @width_fool;
+        height: 150px; 
+        border: @help_border;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        box-sizing: border-box;
+        background-image: url(../img/purchase_background.png);
+        
+        .servises_purchase_title {
+            font-family: @font_raleway;
+            font-size: 28px;
+            line-height: 1.2;
+            font-weight: 400;
+            color: #ffffff;
+            margin-bottom: 8px;
+        }
+        
+        span {
+           font-family: @font_raleway;
+            font-size: 28px;
+            line-height: 1.2;
+            font-weight: 400;
+            color: #c7b299; 
+        }
+        
+        .servises_purchase_txt {
+            font-family: @font_montserrat;
+            font-size: 18px;
+            line-height: 1.2;
+            font-weight: 300;
+            color: #615855;
+        }
+        
+    }
+    
+    .servises_purchase_button {
+        width: 170px;
+        height: 50px;
+        background-color: #998675;
+        border-radius: 3px;
+    }
+    
+    .servises_purchase_button_txt {
+        font-family: @font_raleway;
+        font-size: 14px;
+        line-height: 23px;
+        font-weight: 800;
+        text-transform: uppercase;
+        color: #ffffff;
+        text-align: left;
+    }
+    
+}

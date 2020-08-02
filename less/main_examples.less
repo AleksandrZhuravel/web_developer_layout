@@ -1,0 +1,270 @@
+@width_fool: 1920px;
+@help_border: 2px solid red;
+@font_raleway: Raleway;
+@font_montserrat: Montserrat;
+
+.main-examples {
+    width: @width_fool;
+    min-height: 1162px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border:@help_border;
+    box-sizing: border-box;
+    
+    .examples_hider {
+        font-family: @font_raleway;
+        font-size: 30px;
+        line-height: 1.2;
+        font-weight: 600;
+        color: #555555;
+    }
+    
+    .examples_text {
+        font-family: @font_montserrat;
+        font-size: 16px;
+        line-height: 28px;
+        font-weight: 300;
+        color: #8c8c8c;
+        text-align:center;
+    }
+    
+    .examples_buttons {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        box-sizing: border-box;
+        width: 605px;
+        height: 32px;
+        border: @help_border;
+        
+        & button {
+            height: 32px;
+            background-color: #ffffff;
+            border: 1px solid #ebebeb;
+            border-radius: 3px;
+            font-family: Montserrat;
+            font-size: 14px;
+            line-height: 21px;
+            font-weight: 300;
+            color: #8c8c8c;
+            text-align:center;
+            
+            &:active {
+                color: #ffffff;
+                background-color: #998675;
+            }
+            &:hover {
+                color: #555555;
+                background-color: #d4cfcf;
+            }
+        }
+        
+    }
+    
+    .examples_buttons_all {
+        width: 70px;
+    }
+    
+    .examples_buttons_web {
+        width: 120px;
+    }
+    
+    .examples_buttons_mobile {
+        width: 120px;
+    }
+    
+    .examples_buttons-illustration {
+      width: 120px;  
+    }
+    
+    .examples_buttons_photo {
+      width: 135px;  
+    }
+    
+    .examples_pictures {
+        width: 1170px;
+        height: 704px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        border:@help_border;
+        box-sizing: border-box;
+        
+        & article {
+            width: 370px;
+            height: 337px;
+            border:@help_border;
+            padding: 0 0 0 0;
+            background-color: #fbfaf8;
+            
+            .examples_article_text {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                position: relative;
+            }
+            
+            .examples_article_text:before {
+                content: "";
+                  display: block;
+                  border: 30px solid transparent;	
+                  border-bottom: 10px solid #fbfaf8;
+                  position: absolute;
+                  top: -44px;
+                  left: 19px;
+            }
+            
+            .examples_pictures_span {
+                display: block;
+                font-family: @font_raleway;
+                font-size: 20px;
+                line-height: 1.2;
+                font-weight: 500;
+                color: #c7b299;
+                padding: 30px 0 0 29px;
+            }
+            
+            .examples_pictures_paragraph {
+                display: block;
+                font-family: @font_montserrat;
+                font-size: 14px;
+                line-height: 20px;
+                font-weight: 300;
+                color: #d1d1d1;
+                padding: 0 0 27px 30px;
+                margin: 0;
+            }
+            
+            &:active {
+                background-color:#362f2d;
+                
+                .examples_pictures_span {
+                  color: #ffffff;  
+                }
+                
+                .examples_pictures_paragraph {
+                    color: #c7b299;
+                }
+                
+                .examples_article_text:before {
+                  border-bottom: 10px solid #362f2d;  
+                    
+                }
+                
+                }
+                
+//                &:hover {
+//                    
+//                background-color:#c4c2c2;
+//                
+//                .examples_pictures_span {
+//                  color: #555555;  
+//                }
+//                
+//                .examples_pictures_paragraph {
+//                    color: #555555;
+//                }
+//                
+//            }
+        
+    }
+    
+    .examples_pictures_one {
+        img {
+        }
+        triangle {
+        }
+        span {
+        }
+        p {
+        }
+    }
+    .examples_pictures_two {
+        img {
+        }
+        triangle {
+        }
+        span {
+        }
+        p {
+        }
+    }
+    .examples_pictures_three {
+        
+        img {
+        }
+        triangle {
+        }
+        span {
+        }
+        p {
+        }
+    }
+    .examples_pictures_four {
+        
+        align-self: flex-end;
+        
+        img {
+        }
+        triangle {
+        }
+        span {
+        }
+        p {
+        }
+    }
+    .examples_pictures_five {
+        
+        align-self: flex-end;
+        
+        img {
+        }
+        triangle {
+        }
+        span {
+        }
+        p {
+        }
+    }
+    .examples_pictures_six {
+        
+        align-self: flex-end;
+        
+        img {
+        }
+        triangle {
+        }
+        span {
+        }
+        p {
+        }
+    }
+    }
+    
+    .button_load {
+        width: 170px;
+        height: 50px;
+        background-color: #ffffff;
+        border-radius: 3px;
+        font-family: Raleway;
+        font-size: 14px;
+        line-height: 23px;
+        font-weight: 800;
+        text-transform: uppercase;
+        color: #8c8c8c;
+        
+       &:active {
+                color: #ffffff;
+                background-color: #998675;
+            }
+        
+        &:hover {
+            background-color: #d4cfcf;    
+            color: #555555;   
+            }
+    }
+}
